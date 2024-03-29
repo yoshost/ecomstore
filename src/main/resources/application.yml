@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: ecomstore
+  docker:
+    compose:
+      lifecycle-management: start_only
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ecomstore
+    username: postgres
+    password: secret
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    database: postgresql
+    show-sql: true
